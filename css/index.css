@@ -10,6 +10,7 @@ header {
 
 .logo span {
     font-size: 24px;
+    margin-right: 10px;
     font-weight: bold;
     color: #00ffcc;
     text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
@@ -19,7 +20,7 @@ nav a {
     margin-right: 20px;
     text-decoration: none;
     color: #00ffcc;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -31,7 +32,6 @@ nav a:hover {
 
 nav a.gitlink {
     padding: 5px 10px;
-    background: linear-gradient(135deg, #ff00ff, #ff66cc);
     color: #fff;
     border-radius: 5px;
     font-weight: bold;
@@ -257,7 +257,7 @@ ul {
 }
 
 /* Estilos para teléfonos móviles */
-@media (max-width: 767px) {
+@media (max-width: 448px) {
     .container {
         max-width: 100%;
         flex-direction: column;
@@ -315,7 +315,7 @@ ul {
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        height: auto;
+        height: 1000px;
         width: auto;
         padding: 20px;
         background-color: #0f0f0f;
@@ -332,5 +332,22 @@ ul {
         background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
         width: auto;
+    }
+
+    .logo span {
+        font-size: 18px;
+        margin-right: 10px;
+        font-weight: bold;
+        color: #00ffcc;
+        text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    }
+
+
+    nav a.gitlink {
+        padding: 5px 10px;      
+        color: #fff;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.2s;
     }
 }
